@@ -10,7 +10,7 @@ import { ContactComponent } from './contact/contact.component';
   declarations: [
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
   ],
   exports: [
     HomeComponent,
