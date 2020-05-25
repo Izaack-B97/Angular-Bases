@@ -20,4 +20,7 @@ export class PostComponent implements OnInit {
       // });
   }
 
+  escuchaClick(id: number) {
+    console.log(`Click en ${id}`);
+  }
 }

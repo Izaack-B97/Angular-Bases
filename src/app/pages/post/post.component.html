@@ -1,7 +1,12 @@
 <h1>Post</h1>
 <ul class="list-group">
-    <li *ngFor="let mensaje of mensajes | async" class="list-group-item">
+
+    <app-post-singular *ngFor="let mensaje of mensajes | async" 
+        [mensaje]="mensaje" 
+        (clickPostSingular)="escuchaClick( $event )"></app-post-singular>
+
+    <!-- <li *ngFor="let mensaje of mensajes | async" class="list-group-item">
         <h2>{{ mensaje.title }}</h2>
         <p>{{ mensaje.body }}</p>
-    </li>
+    </li> -->
 </ul>
